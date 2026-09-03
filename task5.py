@@ -51,11 +51,24 @@ class Employee:
             print("Finished get_top_employees")
             return result
 
-    @log_call
-    def get_top_employees(employees, department, count):
+    def employees(department):
         match = filter(key = lambda x: department == department)
-        sort = sorted(count, key=lambda x: x["count"])
-        best_count = sorted(count)
+        return match
+
+    def department(salary):
+        sort = sorted(salary, key=lambda x: x["count"])
+        return sort
+
+    def count(salary):
+        best_count = sorted(salary)
+        return best_count
+
+
+    def get_top_employees(employees, department, count):
+        pass
+        # match = filter(key = lambda x: department == department)
+        # sort = sorted(count, key=lambda x: x["count"])
+        # best_count = sorted(count)
 
 
             
